@@ -1,15 +1,15 @@
 <!-- PROJECT LOGO -->
 <p align="center">
-    <h3 align="center">Angular TXT record editor</h3>
+    <h3 align="center">Domain  record service</h3>
   <p align="center">
-    An Angular demonstration project for editing TXT records for fictitious domains and resources.
+    A Flask demonstration project for serving TXT records for fictitious domains and resources.
     <br />
-    <a href="https://github.com/bigangryguy/angular-domain-txt"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/bigangryguy/flask-domain-txt"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/bigangryguy/angular-domain-txt/issues">Report Bug</a>
+    <a href="https://github.com/bigangryguy/flask-domain-txt/issues">Report Bug</a>
     ·
-    <a href="https://github.com/bigangryguy/angular-domain-txt/issues">Request Feature</a>
+    <a href="https://github.com/bigangryguy/flask-domain-txt/issues">Request Feature</a>
   </p>
 </p>
 
@@ -32,15 +32,19 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-An Angular demonstration project for editing TXT records for fictitious domains and resources. 
-This is nothing more than a made up use case for learning Angular and is not intended for any real world use. However, 
-if you find anything useful in it for your own learning, that would make me happy.
+A Python Flask and SQLAlchemy demo project for serving TXT records for fictitious domains 
+and resources. This is nothing more than a made up use case for learning Flask and 
+SQLAlchemy and is not intended for any real world purpose. However, if you find anything 
+useful in it for your own learning, that would make me happy.
+
+This project is the backend to an [Angular frontend](https://github.com/bigangryguy/angular-domain-txt) 
+and both need to be running together for a fully functioning system.
 
 
 ### Built With
 
-* [angular](https://angular.io/)
-* [TypeScript](https://www.typescriptlang.org/)
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+* [SQLAlchemy](https://www.sqlalchemy.org/)
 
 
 <!-- GETTING STARTED -->
@@ -51,25 +55,45 @@ Linux or Unix-like system. I can verify this will work on macOS as well.
 
 ### Prerequisites
 
-You will need to install [Node.js](https://nodejs.org/en/) on your system. Instructions for that depend on your OS; go
-to the Node.js website for detailed instructions.
+You will need to have [Python 3.8+](https://www.python.org/) installed on your system to 
+run the service. In addition, you will need the following Python modules. All of these 
+are listed in the `requirements.txt` file included in the repository. Versions listed are 
+those used during development; versions greater than those _should_ work.
+
+* click 7.1.2
+* Flask 1.1.2
+* itsdangerous 1.1.0
+* Jinja2 2.11.2
+* MarkupSafe 1.1.1
+* Werkzeug 1.0.1
+* SQLAlchemy 1.3.19
+* Flask-SQLAlchemy 2.4.4
+* Flask-Cors 3.0.9
+* marshmallow 3.8.0
+* pytest 6.1.1
 
 ### Installation
 
 1. Clone the repo
 ```shell script
-git clone https://github.com/bigangryguy/angular-domain-txt.git
+git clone https://github.com/bigangryguy/flask-domain-txt.git
 ```
-2. Install prerequisites (see above)
+2. Install prerequisites (see above). This can be done quickly using `pip` by running:
+```shell script
+pip install -r requirements.txt
+```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This is a standard Angular CLI project. To run the server in development, execute this command in the source code root
+This is a standard Flask project. To run the server in development, execute this command in the source code root
 folder:
 ```shell script
-ng serve
+./bootstrap.sh
 ```
+The script will set the appropriate environment variables and then run the flask server.
+
+
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -100,7 +124,7 @@ Distributed under the GPLv3 License. See `COPYING` for more information.
 
 David Wilcox - [@davidtwilcox](https://twitter.com/davidtwilcox) - david@dtwil.co
 
-Project Link: [https://github.com/bigangryguy/angular-domain-txt](https://github.com/bigangryguy/angular-domain-txt)
+Project Link: [https://github.com/bigangryguy/flask-domain-txt](https://github.com/bigangryguy/flask-domain-txt)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
