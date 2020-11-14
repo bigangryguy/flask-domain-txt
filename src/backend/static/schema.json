@@ -1,0 +1,4 @@
+{
+  "description": "A string consisting of all lower-case characters and spaces only, surrounded by square brackets, followed by a single space and a number from 0 to 9999 without leading zeros. Example: [canberra australia] 8846",
+  "regex": "\\[[a-z\\s]+\\]\\s{1}(0|[1-9][0-9]{0,3})$"
+}
